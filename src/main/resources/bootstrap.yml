@@ -1,0 +1,45 @@
+spring:
+  application:
+    #Nacos Spring Cloud中，格式dataId：${prefix}-${spring.profiles.active}.${file-extension}
+    name: bw-system-component
+  #注意：当的值为spring.profiles.active空时，相应的连字符 -将被删除，并且dataId的格式变为： ${prefix}.${file-extension}
+  #profiles.active: dev
+  cloud:
+    nacos:
+      config:
+        #nacos 地址，多个用个逗号隔开","
+        server-addr: 192.168.2.60:8848
+        #data-id 的名称就是application 的name 加file-extension jfrog-security-server.yaml，当前仅 支持properties和yaml类型
+        file-extension: yaml
+        #group 不必须 默认DEFAULT_GROUP，如需指定，填写对应的group
+        group: DEFAULT_GROUP
+        # 不必须，默认public，若指定 需要配置空间id
+        namespace: cmdb
+        # 是否使用 nacos 配置中心的配置,默认true -使用，  false-不使用
+        enabled: true
+        # 认证账号
+        username: nacos
+        # 认证密码
+        password: nacos
+      discovery:
+        server-addr: ${spring.cloud.nacos.config.server-addr}
+        # 认证账号
+        username: ${spring.cloud.nacos.config.username}
+        # 认证密码
+        password: ${spring.cloud.nacos.config.password}
+        # 注册 namespace,不必须，默认public
+        namespace: ${spring.cloud.nacos.config.namespace}
+
+server:
+  port: 7300
+
+myusername: yfzhao
+mypassword: 123456
+
+accessTokenGitHub: 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
+azure_username: bw
+azure_password: o774p4445pv5s6tmozxczjijzxusco2cdmdwu7d5b64u5aa4q52a
+
+#授权ips,逗号隔开
+ipAuthSwitch: false
+ips: 172.10.0.187
