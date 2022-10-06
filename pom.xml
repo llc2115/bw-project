@@ -81,13 +81,13 @@
     <dependency>
       <groupId>io.springfox</groupId>
       <artifactId>springfox-swagger-ui</artifactId>
-      <version>2.9.2</version>
+      <version>2.10.0</version>
     </dependency>
 
     <dependency>
       <groupId>io.springfox</groupId>
       <artifactId>springfox-swagger2</artifactId>
-      <version>2.9.2</version>
+      <version>2.10.0</version>
     </dependency>
 
     <dependency>
@@ -137,7 +137,7 @@
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>easyexcel</artifactId>
-      <version>2.2.10</version>
+      <version>3.0.1</version>
     </dependency>
 
     <dependency>
@@ -148,7 +148,7 @@
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
-      <version>1.2.62</version>
+      <version>1.2.83</version>
     </dependency>
 
   </dependencies>
