@@ -21,7 +21,7 @@
     <!--        <tomcat.version>8.5.55</tomcat.version>-->
     <spring-cloud.version>2020.0.5</spring-cloud.version>
     <!--        <spring-cloud-alibaba.version>2.2.5.RELEASE</spring-cloud-alibaba.version>-->
-    <com-alibaba-cloud.version>2021.1</com-alibaba-cloud.version>
+    <com-alibaba-cloud.version>2022.0.0.0</com-alibaba-cloud.version>
   </properties>
 
   <dependencyManagement>
